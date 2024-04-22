@@ -53,10 +53,12 @@ def on_release(key):
 def main():
     print("running ...")
     th = pynput.keyboard.Listener(on_press=on_press, on_release=on_release)
+    th.start()
     try:
         while True:
             time.sleep(3600)
     except KeyboardInterrupt:
+        th.stop()
         exit(0)
 
 
