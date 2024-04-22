@@ -1,7 +1,7 @@
 import pynput.keyboard
 import keyboard
 import json
-import threading
+import time
 
 # 用于暂存输入的转义字符
 current_input = ""
@@ -49,22 +49,15 @@ def on_release(key):
         current_input = ""
         return True
 
-def thread_job():
-    print("running ...")
-    with pynput.keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
-        listener.join()
-
 
 def main():
+    print("running ...")
+    th = pynput.keyboard.Listener(on_press=on_press, on_release=on_release)
     try:
-        thread = threading.Thread(target=thread_job)
-        thread.daemon = True
-        thread.start()
-        while thread.is_alive():
-            thread.join(1)  # time out not to block KeyboardInterrupt
+        while True:
+            time.sleep(3600)
     except KeyboardInterrupt:
-        print("exit ...")
-        exit()
+        exit(0)
 
 
 if __name__ == "__main__":
