@@ -85,13 +85,13 @@ conda install pynput keyboard
 
 （逗号隔开表示多种输入方式均可, 得到的结果相同, 下同）
 
-| 代码                     | 字符 | 代码                     | 字符 | 代码                    | 字符 |
-| ------------------------ | ---- | ------------------------ | ---- | ----------------------- | ---- |
-| `\l`, `\leftarrow`       | `←`  | `\ul`, `\upleftarrow`    | `↖`  | `\Leftarrow`            | `⇐`  |
-| `\r`, `\rightarrow`      | `→`  | `\ur`, `\uprightarrow`   | `↗`  | `\Ri`, `\Rightarrow`    | `⇒`  |
-| `\u`, `\uparrow`         | `↑`  | `\dl`, `\downleftarrow`  | `↙`  | `\bi`, `Leftrightarrow` | `⇔`  |
-| `\d`, `\downarrow`       | `↓`  | `\dr`, `\downrightarrow` | `↘`  | `\mapsto`               | `↦`  |
-| `\lr`, `\leftrightarrow` | `↔`  | `\ud`, `\updownarrow`    | `↕`  | `\hookrightarrow`       | `↪`  |
+| 代码                       | 字符 | 代码                     | 字符 | 代码                    | 字符 |
+| -------------------------- | ---- | ------------------------ | ---- | ----------------------- | ---- |
+| `\l`, `\leftarrow`         | `←`  | `\ul`, `\upleftarrow`    | `↖`  | `\Leftarrow`            | `⇐`  |
+| `\r`, `\to`, `\rightarrow` | `→`  | `\ur`, `\uprightarrow`   | `↗`  | `\Ri`, `\Rightarrow`    | `⇒`  |
+| `\u`, `\uparrow`           | `↑`  | `\dl`, `\downleftarrow`  | `↙`  | `\bi`, `Leftrightarrow` | `⇔`  |
+| `\d`, `\downarrow`         | `↓`  | `\dr`, `\downrightarrow` | `↘`  | `\mapsto`               | `↦`  |
+| `\lr`, `\leftrightarrow`   | `↔`  | `\ud`, `\updownarrow`    | `↕`  | `\hookrightarrow`       | `↪`  |
 
 #### 分数
 
@@ -140,7 +140,7 @@ conda install pynput keyboard
 | `\rf`, `\rfloor` | `⌋`  | `\!`                    | `¡`  |
 | `\da`            | `†`  | `\#`                    | `♯`  |
 | `\el`            | `ℓ`  | `\&`                    | `⅋`  |
-| `\w`             | `℘`  | `\?`                    | `¿`  |
+| `\w`, `\wp`      | `℘`  | `\?`                    | `¿`  |
 | `\Re`            | `ℜ`  | `\*`, `\st`, `\star`    | `⋆`  |
 | `\Im`            | `ℑ`  | `\ld`                   | `“`  |
 | `\hb`, `\hbar`   | `ℏ`  | `\rd`                   | `”`  |
