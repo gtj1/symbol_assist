@@ -1,9 +1,14 @@
 import pynput.keyboard
 import keyboard
-from symbols import symbols
+import json
+import threading
 
 # 用于暂存输入的转义字符
 current_input = ""
+
+with open("symbols.json", encoding="utf8") as file:
+    s = file.read()
+    symbols = json.loads(s)
 
 
 def symbol_input(input_char):
@@ -28,11 +33,9 @@ def on_press(key):
     except AttributeError:
         if key == pynput.keyboard.Key.space:
             return
-        elif key == pynput.keyboard.Key.backspace:
+        if key == pynput.keyboard.Key.backspace:
             current_input = current_input[:-1]
-        elif key == pynput.keyboard.Key.shift:
-            return
-        else:
+        elif key in [pynput.keyboard.Key.esc, pynput.keyboard.Key.enter]:
             current_input = ""
 
 
@@ -46,11 +49,22 @@ def on_release(key):
         current_input = ""
         return True
 
-
-def main():
+def thread_job():
     print("running ...")
     with pynput.keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
         listener.join()
+
+
+def main():
+    try:
+        thread = threading.Thread(target=thread_job)
+        thread.daemon = True
+        thread.start()
+        while thread.is_alive():
+            thread.join(1)  # time out not to block KeyboardInterrupt
+    except KeyboardInterrupt:
+        print("exit ...")
+        exit()
 
 
 if __name__ == "__main__":
