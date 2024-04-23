@@ -546,6 +546,7 @@
     "\\vee": "∨",
     "\\neg": "¬",
     "\\sim": "∼",
+    "\\approx": "≈",
     "\\cong": "≅",
     "\\square": "◾",
     "\\parallelogram": "▰",
