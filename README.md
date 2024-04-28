@@ -1,8 +1,12 @@
 ### 关于
 
-本程序受到证明语言 `Lean` 中符号输入方式的的启发, 旨在帮助日常生活中的数学符号输入, 例如使用 `\a` 轻松地输入 `α`. 程序输入得到的是 `unicode` 字符, 需要注意的是这与 `TeX` 渲染得到公式的原理不同, `unicode` 字符并不能代替 `TeX` 公式渲染的任务, 但是可以极大地方便需要输入数学符号的交流.
+本程序是 `AutoHotKey` 版本的 `unicode` 数学符号输入脚本. 本程序受到证明语言 `Lean` 中符号输入方式的的启发, 旨在帮助日常生活中的数学符号输入, 例如使用 `\a` 轻松地输入 `α`. 程序输入得到的是 `unicode` 字符, 需要注意的是这与 `TeX` 渲染得到公式的原理不同, `unicode` 字符并不能代替 `TeX` 公式渲染的任务, 但是可以极大地方便需要输入数学符号的交流.
 
-程序尚在开发中, 欢迎您的参与与建议. 本程序由 Auto HotKey 脚本生成.
+This is an AutoHotKey version of the `unicode` math symbols typing script. It is inspired by the symbol input method in the proof language `Lean`, aiming to help with the daily input of mathematical symbols, such as using `\a` to easily input `α`. The program outputs `unicode` characters, which is different from the formula rendering in `TeX`. `unicode` characters cannot replace the task of rendering `TeX` formulas, but they can greatly facilitate communication that requires the input of mathematical symbols.
+
+程序尚在开发中, 欢迎您的参与与建议.
+
+The program is still under development, and your participation and suggestions are welcome.
 
 ### 预备工作
 
@@ -153,7 +157,7 @@
 
 **Q3.** 为什么在有些环境中运行时不能得到正确结果, 如在 QQ 中输入 `\Mia` 时得到的结果不是 `𝑎`, 而是类似这样的 `𛽒`?
 
-**A3.** 这是由于一些编辑器 (例如QQ输入框) 不支持所有的 `unicode` 字符导致的, 不是程序问题.
+**A3.** 这是由于一些编辑器 (例如QQ输入框) 不支持所有的 `unicode` 字符导致的, 不是程序问题. 事实上，这些字符在发送之后通常是正常的.
 
 **Q4.** 为什么有时可以打出文档中没有的字符?
 
