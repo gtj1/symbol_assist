@@ -21,7 +21,7 @@ def on_press(key):
                 current_input = "\\"
             else:
                 current_input = ""
-                keyboard.send("backspace")
+                # keyboard.send("backspace")
         elif current_input:
             if key.char:
                 current_input += key.char
