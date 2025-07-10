@@ -1,6 +1,6 @@
 - 如果你希望改用 json 储存字符映射, 请前往 <a href="https://github.com/gtj1/symbol_assist/tree/symbol_json">symbol_json 分支</a>
 - 如果你希望直接运行可执行文件而非通过 `python`, 请前往 <a href="https://github.com/gtj1/symbol_assist/tree/symbol_ahk">symbol_ahk 分支</a> (此版本基于Auto HotKey)
-- 提示：main 分支采用硬编码储存字符映射, 此版本是旧的版本
+- 相关推荐：[OneHotkey: 简化OneNote和Word中的数学公式输入，例如\a代表\alpha](https://github.com/RUSRUSHB/OneHotkey)
 
 # 关于
 
